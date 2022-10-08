@@ -59,7 +59,7 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  outline: 2px solid tomato;
+  /* outline: 2px solid tomato; */
 }
 
 section {
@@ -135,14 +135,15 @@ section.projects {
 .header > .container {
   display: flex;
   justify-content: space-between;
-
-  padding-top: 24px;
-  padding-bottom: 25px;
 }
 .header-navigation {
   display: flex;
 }
 .header-logo {
+  padding-top: 24px;
+  padding-right: 93px;
+  padding-bottom: 25px;
+
   font-family: 'Raleway';
   font-weight: 700;
   font-size: 26px;
@@ -160,14 +161,14 @@ section.projects {
 .nav-list {
   display: flex;
   list-style: none;
-  /* gap: 50px; */
-}
-
-.nav-list li:not(:last-child) {
-  margin-right: 50px;
+  gap: 50px;
 }
 
 .nav-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -192,11 +193,17 @@ section.projects {
 /* ---------------------------- header contacts ------------------------------- */
 .contacts-list {
   display: flex;
+  gap: 50px;
+
   list-style: none;
 }
 .contact-item {
 }
 .contact-header-link {
+  display: block;
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
@@ -224,8 +231,8 @@ section.projects {
 }
 
 .hero {
-  padding-top: 200px;
-  padding-bottom: 200px;
+  /* padding-top: 200px;
+  padding-bottom: 200px; */
 
   text-align: center;
 }
@@ -260,11 +267,12 @@ section.projects {
 }
 
 .benefits-list {
+  display: flex;
+  gap: 30px;
   list-style: none;
 }
 .benefits-item {
   width: 270px;
-  outline: 1px solid firebrick;
 }
 .benefits-title {
   margin-bottom: 10px;
@@ -293,6 +301,9 @@ section.projects {
   letter-spacing: 0.03em;
 }
 .projects-list {
+  display: flex;
+  gap: 30px;
+
   list-style: none;
 }
 .projects-item {
@@ -312,6 +323,8 @@ section.projects {
   letter-spacing: 0.03em;
 }
 .team-list {
+  display: flex;
+  gap: 30px;
   list-style: none;
 }
 .team-item {
@@ -415,14 +428,33 @@ section.projects {
   margin-bottom: 50px;
 }
 .portfolio-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
   list-style: none;
 }
 .portfolio-item {
   width: 370px;
-  height: 404px;
-  border: 1px solid var(--border-item-color);
+  /* border: 1px solid var(--border-item-color); */
 }
+
+/* .portfolio-item > img {
+  margin-bottom: 20px;
+} */
+
+.portfolio-item-border {
+  border-top: 0px solid var(--border-item-color);
+  border-right: 1px solid var(--border-item-color);
+  border-bottom: 1px solid var(--border-item-color);
+  border-left: 1px solid var(--border-item-color);
+}
+
 .portfolio-title {
+  margin-top: 20px;
+  margin-left: 24px;
+  margin-bottom: 4px;
+  margin-right: 24px;
+
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
@@ -431,6 +463,10 @@ section.projects {
   color: var(--title-text-color);
 }
 .portfolio-description {
+  margin-right: 24px;
+  margin-bottom: 20px;
+  margin-left: 24px;
+
   line-height: 1.88;
   letter-spacing: 0.03em;
 
