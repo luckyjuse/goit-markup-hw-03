@@ -227,14 +227,11 @@ section.projects {
 
 /* --------------------------------- hero ------------------------------------- */
 .hero {
-  background-color: var(--background-footer-color);
-}
-
-.hero {
   /* padding-top: 200px;
   padding-bottom: 200px; */
 
   text-align: center;
+  background-color: var(--background-footer-color);
 }
 
 .hero-title {
@@ -435,27 +432,17 @@ section.projects {
 }
 .portfolio-item {
   width: 370px;
-  /* border: 1px solid var(--border-item-color); */
 }
 
-/* .portfolio-item > img {
-  margin-bottom: 20px;
-} */
-
 .portfolio-item-border {
-  border-top: 0px solid var(--border-item-color);
+  padding: 20px 24px;
+
   border-right: 1px solid var(--border-item-color);
   border-bottom: 1px solid var(--border-item-color);
   border-left: 1px solid var(--border-item-color);
 }
 
 .portfolio-title {
-  margin-top: 20px;
-  margin-left: 24px;
-  margin-bottom: 4px;
-  margin-right: 24px;
-
-  font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
@@ -463,10 +450,6 @@ section.projects {
   color: var(--title-text-color);
 }
 .portfolio-description {
-  margin-right: 24px;
-  margin-bottom: 20px;
-  margin-left: 24px;
-
   line-height: 1.88;
   letter-spacing: 0.03em;
 
